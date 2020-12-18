@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   resources :users, only: [:index, :show]
   resources :origins do
+    resource :likes, only: [:create, :destroy]
     collection do
       get 'search'
     end
