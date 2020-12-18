@@ -1,4 +1,6 @@
 class OriginsController < ApplicationController
+  before_action :set_origin, only: [:edit, :show, :update]
+
 
   def index
     @origins = Origin.all
@@ -21,11 +23,28 @@ class OriginsController < ApplicationController
     end
   end
 
+  def show
+  end
+
+  def edit
+  end
+
+  def update
+    if @origin.update(origin_params)
+      redirect_to origin_path
+    else
+      render :edit
+    end
+  end
+
   private
 
   def origin_params
     params.require(:origin).permit(:book_title, :text, :youtube_url, :amazon, :category_id).merge(user_id: current_user.id)
   end
 
+  def set_origin
+    @origin = Origin.find(params[:id])
+  end
 
 end
