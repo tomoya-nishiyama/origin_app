@@ -1,0 +1,29 @@
+<%= render "shared/header" %>
+
+  <div class='origin-contents'>
+    <ul class='origin-lists'>
+      <% @origins.each do |origin| %>
+        <li class='list'>  
+         
+         <div class='origin-img'> 
+           <iframe  height="200" src="https://www.youtube.com/embed/<%=origin.youtube_url%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+
+          <%= link_to origin_path(origin.id) do %> 
+          <div class='origin-info'>
+            <h3 class='origin-name'>
+              <%= origin.book_title %>
+            </h3>
+
+            <div class='origin-text'>
+                <span><%= origin.text %><br><%= origin.category.name %></span>
+             
+            </div>
+          </div>
+          <% end %> 
+        </li> 
+      <% end %>
+    </ul>
+  </div>
+
+<%= render "shared/footer" %>  
