@@ -14,4 +14,16 @@ class Origin < ApplicationRecord
     validates :category_id
   end
 
+  def self.search(search)
+    Origin.where('text LIKE(?)', "%#{search}%").or(Origin.where('book_title LIKE(?)', "%#{search}%"))
+  end
+
+  def self.csearch(category_id)
+    Origin.where('category_id = ?', category_id)
+  end
+
+  def self.allsearch(category_id, search)
+    Origin.where("(category_id = ?) AND ((text LIKE(?)) OR (book_title LIKE(?)))", "#{category_id}", "%#{search}%", "%#{search}%")
+  end
+
 end

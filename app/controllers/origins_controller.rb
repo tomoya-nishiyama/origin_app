@@ -1,6 +1,6 @@
 class OriginsController < ApplicationController
   before_action :set_origin, only: [:edit, :show, :update, :destroy]
-
+  before_action :move_to_index, only: [:edit, :destroy]
 
   def index
     @origins = Origin.all
@@ -42,6 +42,18 @@ class OriginsController < ApplicationController
     redirect_to root_path
   end
 
+  def search
+    if params[:keyword] != "" && params[:category_id] != ""
+      @origins = Origin.allsearch(params[:category_id], params[:keyword])
+    elsif params[:keyword] != ""
+      @origins = Oriign.search(params[:keyword])
+    elsif params[:category_id] != ""
+      @origins = Origin.csearch(params[:category_id])
+    else
+      Origin.all
+    end
+  end
+
   private
 
   def origin_params
@@ -50,6 +62,13 @@ class OriginsController < ApplicationController
 
   def set_origin
     @origin = Origin.find(params[:id])
+  end
+
+  def move_to_index
+    @origin = Origin.find(params[:id])
+    unless user_signed_in? && current_user.id == @origin.user_id
+      redirect_to action: :index
+    end
   end
 
 end

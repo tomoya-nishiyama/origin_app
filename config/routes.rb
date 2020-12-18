@@ -4,5 +4,9 @@ Rails.application.routes.draw do
   root to: "origins#index"
 
   resources :users, only: [:index, :show]
-  resources :origins
+  resources :origins do
+    collection do
+      get 'search'
+    end
+  end
 end
