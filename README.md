@@ -10,7 +10,7 @@
 
 ### Association
 
-- has_many :origin
+- has_many :originss
 - has_many :likes
 
 ## origins テーブル
