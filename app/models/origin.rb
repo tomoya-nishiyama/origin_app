@@ -1,6 +1,6 @@
 class Origin < ApplicationRecord
   belongs_to :user
-  has_many :likes
+  has_many :likes, foreign_key: "origin_id", dependent: :destroy
   has_many :liked_users, through: :likes, source: :user
 
   extend ActiveHash::Associations::ActiveRecordExtensions
