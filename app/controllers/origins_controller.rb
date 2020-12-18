@@ -1,5 +1,5 @@
 class OriginsController < ApplicationController
-  before_action :set_origin, only: [:edit, :show, :update]
+  before_action :set_origin, only: [:edit, :show, :update, :destroy]
 
 
   def index
@@ -35,6 +35,11 @@ class OriginsController < ApplicationController
     else
       render :edit
     end
+  end
+
+  def destroy
+    @origin.destroy
+    redirect_to root_path
   end
 
   private
