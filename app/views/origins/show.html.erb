@@ -1,0 +1,44 @@
+<%= render "shared/header" %>
+
+<div class="origin-show">
+  <div class="origin-box">
+
+    <h2 class="name">
+      <%= @origin.book_title %>
+    </h2>
+
+    <div class='youtube-url'>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/<%=@origin.youtube_url%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+        <%# いいねボタンの実装 %>
+        
+        <%# いいねボタンの実装 %>
+  <% if user_signed_in? %>
+    <% if current_user.id == @origin.user_id %>
+    <%= link_to '編集', edit_origin_path(@origin.id), method: :get, class: "origin-red-btn" %>
+    
+    <%= link_to '削除', origin_path(@origin.id), method: :delete, class:'origin-destroy' %>
+    <% end %>
+  <% end %>
+    <%= link_to image_tag('amazon.rogo.png'), @origin.amazon, class:"amazon-btn" %>
+    
+
+    <div class="origin-explain-box">
+      <span><%= @origin.text %></span>
+    </div>
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-item">出品者</th>
+          <td class="detail-value"><%= @origin.user.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">カテゴリー</th>
+          <td class="detail-value"><%= @origin.category.name %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<%= render "shared/footer" %>
