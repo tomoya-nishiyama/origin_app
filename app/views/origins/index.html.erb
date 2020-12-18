@@ -12,8 +12,37 @@
   </div>
 
   <%# Favorite Books %>
-  
+  <div class='origin-contents'>
+    <h2 class='title'>Favorite Books</h2>
+    
+    <ul class='origin-lists'>
+      <% @origins.each do |origin| %>
+        <li class='list'>  
+         <div class='origin-img'> 
+           <iframe  height="200" src="https://www.youtube.com/embed/<%=origin.youtube_url%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+
+          <%= link_to origin_path(origin.id) do %> 
+          <div class='origin-info'>
+            <h3 class='origin-name'>
+              <%= origin.book_title %>
+            </h3>
+
+            <div class='origin-text'>
+                <span><%= origin.text %><br><%= origin.category.name %></span>
+            </div>
+          </div>
+          <% end %> 
+        </li> 
+      <% end %>
+    </ul>
+  </div>
   <%# Favorite Books %>
   <%# 投稿ボタン %>
-  
+  <%= link_to(new_origin_path, class: 'purchase-btn') do %>
+    <span class='purchase-btn-text'>POST</span>
+    <%= image_tag 'logo (5).png' , size: '185x50' ,class: "purchase-btn-icon" %>
+  <% end %>
 </div>
+
+<%= render "shared/footer" %>

@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+.top-page-header {
+  background-image: url("../木目画55.png");
+  background-size: cover;
+  padding: 2vh 15vw;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.search-bar-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.origin-icon {
+  width: 10vw;
+  margin-right: 10vw;
+}
+
+.search-form {
+  width: 55vw;
+  height: 25px; 
+  display: flex;
+}
+
+.search-form>.input-box {
+  
+  padding-left: 10px;
+}
+
+.genre-select{
+  font-size: 12px;
+  width: 30%;
+  height: 32px;
+  margin-top: 5px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  
+}
+
+.search-btn {
+  width: 65px;
+  height: 33px;
+  border: 0;
+  cursor: pointer;
+  background-color: #c7d31e;
+  padding-top: 5px;
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+  color: #2b2b2b8f;
+  font-size: 15px;
+  /* font-family: monospace; */
+}
+
+.search-icon {
+  text-shadow:1px 0 5px black;
+  width: 100%;
+}
+
+.nav {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1vh 0;
+}
+
+.lists-left {
+  display: flex;
+  min-width: 200px;
+
+}
+
+.category-list {
+  text-decoration: none;
+  margin-right: 3vw;
+  color: #333333;
+}
+
+.brand-list {
+  text-decoration: none;
+  color: #333333;
+}
+
+.lists-right {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+}
+
+
+.user-nickname {
+  text-decoration: none;
+  margin-right: 3vw;
+  color: #333333;
+  font-weight: bold;
+}
+
+
+.logout {
+  text-decoration: none;
+  color: #333333;
+}
+
+.login {
+  text-decoration: none;
+  line-height: 32px;
+  margin-right: 3vw;
+  color: #333333;
+}
+
+.sign-up {
+  text-decoration: none;
+  color: #333333;
+}
