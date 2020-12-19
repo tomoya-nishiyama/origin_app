@@ -10,7 +10,7 @@ a {
 .title-contents {
   width: 100vw;
   height: 520px;
-  background-image: image-url('読書3.png');
+  background-image: url('../読書3.png');
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -39,7 +39,7 @@ a {
 /* 投稿一覧 */
 
 .origin-contents {
-  background-image: image-url('木目画55.png');
+  background-image: url("../木目画55.png");
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,7 +76,7 @@ a {
   width: 37vh;
   padding: 1vw;
   margin: o auto;
-  background-image: image-url('木目画55.png');
+  background-image: url("../木目画55.png");
   // background-color: #FFF;
 }
 
@@ -94,7 +94,7 @@ a {
 
 
 .origin-info {
-  background-image: image-url('木目画55.png');
+  background-image: url("../木目画55.png");
   color: black;
   padding: 1.1vw;
   margin: auto;

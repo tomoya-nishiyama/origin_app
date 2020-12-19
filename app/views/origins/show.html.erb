@@ -12,14 +12,7 @@
     </div>
         <%# いいねボタンの実装 %>
     <div id="likes_buttons_<%= @origin.id %>">   
-      <div class='heart-box'>
-        <%= image_tag "logo (7).png", class:"heart-icon" %><%= @origin.likes.count %>
-        <% if current_user.already_liked?(@origin) %>
-            <%= button_to 'いいねを取り消す', origin_likes_path(@origin), method: :delete %>
-        <% else %>
-            <%= button_to 'いいね', origin_likes_path(@origin) %>
-        <% end %>
-      </div>
+      <%= render partial: 'likes/like', locals: { origin: @origin} %>
     </div>  
         <%# いいねボタンの実装 %>
   <% if user_signed_in? %>
