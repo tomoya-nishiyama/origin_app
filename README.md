@@ -4,7 +4,7 @@
 どんな本か気に入ったポイントを記載し、その本に関するyoutubeの動画を載せる事もできます。
 観覧しているユーザーは気になったらamazonからその本を購入する事ができます。
 
-![9ed29bc09a28f7232ec30e3a956de64d](https://user-images.githubusercontent.com/73161307/102704615-18f89e00-42c1-11eb-90fb-0ac3faaf56bf.jpg)
+![573cda6f5694deb0436034ff8df92bca](https://user-images.githubusercontent.com/73161307/102706173-dcce3900-42d2-11eb-929b-d28790bf6358.jpg)
 
 # URL
 
