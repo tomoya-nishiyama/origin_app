@@ -8,6 +8,8 @@
 
 # URL
 
+ゲストログイン（閲覧用）から登録の記入をせずにログインできます。
+
 https://origin-app-2222.herokuapp.com/
 
 # 使用技術
