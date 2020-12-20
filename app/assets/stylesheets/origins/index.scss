@@ -39,7 +39,7 @@ a {
 /* 投稿一覧 */
 
 .origin-contents {
-  background-image: url("../木目画55.png");
+  background-image: image-url("origin-header02.png");
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,7 +76,7 @@ a {
   width: 37vh;
   padding: 1vw;
   margin: o auto;
-  background-image: url("../木目画55.png");
+  background-image: image-url("origin-header02.png");
   // background-color: #FFF;
 }
 
@@ -94,7 +94,7 @@ a {
 
 
 .origin-info {
-  background-image: url("../木目画55.png");
+  background-image: image-url("origin-header02.png");
   color: black;
   padding: 1.1vw;
   margin: auto;

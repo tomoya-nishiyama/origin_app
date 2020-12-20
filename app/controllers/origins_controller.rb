@@ -1,6 +1,7 @@
 class OriginsController < ApplicationController
   before_action :set_origin, only: [:edit, :show, :update, :destroy]
   before_action :move_to_index, only: [:edit, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
 
   def index
     @origins = Origin.all

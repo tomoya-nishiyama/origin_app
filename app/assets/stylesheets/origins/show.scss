@@ -1,7 +1,7 @@
 /* 商品の概要 */
 
 .origin-show {
-  background-image: url("../木目画55.png");
+  background-image: image-url("origin-header02.png");
   
   width: 100vw;
   display: flex;
@@ -11,7 +11,7 @@
 }
 
 .origin-box {
-  background-image: url("../木目画55.png"); 
+  background-image: image-url("origin-header02.png");
   width: 70vw;
   min-width: 1000px;
   padding: 3vh 15vw;
