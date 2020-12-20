@@ -6,9 +6,28 @@
 
 ![9ed29bc09a28f7232ec30e3a956de64d](https://user-images.githubusercontent.com/73161307/102704615-18f89e00-42c1-11eb-90fb-0ac3faaf56bf.jpg)
 
+# URL
 
+https://origin-app-2222.herokuapp.com/
 
+# 使用技術
 
+・Ruby 
+・Ruby on Rails 6.0.0
+・MySQL 5.6.50
+・RSpec
+
+# 機能一覧
+
+・ユーザー登録、ログイン機能(devise)
+・投稿機能
+・いいね機能(Ajax)
+・検索機能
+
+# テスト
+
+・RSpec
+  新規登録機能、投稿機能の単体テストコード
 
 
 
