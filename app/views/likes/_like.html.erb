@@ -1,3 +1,4 @@
+<% if user_signed_in? %>
   <div class='heart-box'>
     <%= image_tag "logo (7).png", class:"heart-icon" %><span class='heart-count'><%= @origin.liked_users.count %></span>
       <% if current_user.already_liked?(@origin) %>
@@ -6,3 +7,4 @@
         <%= button_to 'いいね', origin_likes_path(origin.id), method: :post, remote: true %>
       <% end %>
   </div>
+<% end %>
