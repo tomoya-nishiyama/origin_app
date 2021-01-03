@@ -15,16 +15,16 @@ http://54.95.53.119/
 
 # 使用技術
 
-*Ruby 
+* Ruby 
 
-*Ruby on Rails 6.0.0
+* Ruby on Rails 6.0.0
 
-*MySQL 5.6.50
+* MySQL 5.6.50
 
-*RSpec
+* RSpec
 
-*AWS
-   *EC2
+* AWS
+   * EC2
 
 # 機能一覧
 
