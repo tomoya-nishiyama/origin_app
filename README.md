@@ -10,7 +10,7 @@
 
 # URL
 
-https://origin-app-2222.herokuapp.com/
+http://54.95.53.119/
 ゲストログイン（閲覧用）から登録の記入をせずにログインできます。
 
 # 使用技術
@@ -19,6 +19,7 @@ https://origin-app-2222.herokuapp.com/
 ・Ruby on Rails 6.0.0
 ・MySQL 5.6.50
 ・RSpec
+・AWS(EC2)
 
 # 機能一覧
 
