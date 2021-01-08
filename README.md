@@ -22,7 +22,8 @@ PASS: 2222
 * MySQL 5.6.50  
 * RSpec  
 * AWS  
-  * EC2
+  * EC2  
+  * Route53
 
 # 機能一覧
 
