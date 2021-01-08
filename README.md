@@ -10,7 +10,7 @@
 
 # URL
 
-http://54.95.53.119/  
+http://origin-app.work/  
 ID: admin  
 PASS: 2222  
 ゲストログイン（閲覧用）から登録の記入をせずにログインできます。
