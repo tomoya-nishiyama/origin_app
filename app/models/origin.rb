@@ -3,6 +3,18 @@ class Origin < ApplicationRecord
   has_many :likes, foreign_key: "origin_id", dependent: :destroy
   has_many :liked_users, through: :likes, source: :user
 
+  def self.search(search)
+      Origin.where('book_title LIKE(?)', "%#{search}%")
+  end
+
+  def self.searchs(category_id)
+      Origin.where('category_id = ?', category_id)
+  end
+
+  def liked_by?(user)
+    likes.where(user_id: user.id).exists?
+  end
+
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :category
 
@@ -16,20 +28,16 @@ class Origin < ApplicationRecord
     validates :category_id
   end
 
-  def self.search(search)
-    Origin.where('text LIKE(?)', "%#{search}%").or(Origin.where('book_title LIKE(?)', "%#{search}%"))
-  end
+  # def self.search(search)
+  #   Origin.where('text LIKE(?)', "%#{search}%").or(Origin.where('book_title LIKE(?)', "%#{search}%"))
+  # end
 
-  def self.csearch(category_id)
-    Origin.where('category_id = ?', category_id)
-  end
+  # def self.searchs(category_id)
+  #   Origin.where('category_id = ?', category_id)
+  # end
 
-  def self.allsearch(category_id, search)
-    Origin.where("(category_id = ?) AND ((text LIKE(?)) OR (book_title LIKE(?)))", "#{category_id}", "%#{search}%", "%#{search}%")
-  end
-
-  def liked_by?(user)
-    likes.where(user_id: user.id).exists?
-  end
+  # def self.allsearch(category_id, search)
+  #   Origin.where("(category_id = ?) AND ((text LIKE(?)) OR (book_title LIKE(?)))", "#{category_id}", "%#{search}%", "%#{search}%")
+  # end
 
 end

@@ -43,13 +43,15 @@ class OriginsController < ApplicationController
     redirect_to root_path
   end
 
+  # def search
+  #   @origins = Origin.search(params[:keyword])
+  # end
+
   def search
-    if params[:keyword] != "" && params[:category_id] != ""
-      @origins = Origin.allsearch(params[:category_id], params[:keyword])
-    elsif params[:keyword] != ""
-      @origins = Oriign.search(params[:keyword])
+    if params[:keyword] != ""
+      @origins = Origin.search(params[:keyword])
     elsif params[:category_id] != ""
-      @origins = Origin.csearch(params[:category_id])
+      @origins = Origin.searchs(params[:category_id])
     else
       Origin.all
     end

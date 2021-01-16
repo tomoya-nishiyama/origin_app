@@ -10,16 +10,18 @@
          </div>
 
           <%= link_to origin_path(origin.id) do %> 
-          <div class='origin-info'>
-            <h3 class='origin-name'>
-              <%= origin.book_title %>
-            </h3>
+            <div class='origin-info'>
+              <h3 class='origin-name'>
+                <%= origin.book_title %>
+              </h3>
 
-            <div class='origin-text'>
-                <span><%= origin.text %><br><%= origin.category.name %></span>
-             
+              <div class='origin-text'>
+                  <span><%= origin.text %><br><%= origin.category.name %></span>
+                  <div class='star-btn'>
+                  <%= image_tag "logo (7).png", class:"heart-icon" %><span class='star-count'><%= origin.liked_users.count %></span>
+                </div>
+              </div>
             </div>
-          </div>
           <% end %> 
         </li> 
       <% end %>
