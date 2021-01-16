@@ -43,10 +43,6 @@ class OriginsController < ApplicationController
     redirect_to root_path
   end
 
-  # def search
-  #   @origins = Origin.search(params[:keyword])
-  # end
-
   def search
     if params[:keyword] != ""
       @origins = Origin.search(params[:keyword])
