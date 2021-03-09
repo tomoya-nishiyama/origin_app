@@ -37,7 +37,7 @@ PASS: 2222
 * RSpec  
   * 新規登録機能、投稿機能の単体テストコード
  
- <img src="attach:png.png">
+ ![png](https://user-images.githubusercontent.com/73161307/110421743-6ecf2c00-80e1-11eb-9da1-7bf92b852ae7.png)
 
 
 
