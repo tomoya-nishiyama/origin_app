@@ -37,6 +37,7 @@ PASS: 2222
 * RSpec  
   * 新規登録機能、投稿機能の単体テストコード
  
+ <img src="attach:png.png">
 
 
 
