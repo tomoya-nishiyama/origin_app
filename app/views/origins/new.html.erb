@@ -7,7 +7,7 @@
         <%= form.collection_select(:category_id, Category.all, :id, :name, {}, {class:"category-select"}) %>
         <%= form.text_field :youtube_url, placeholder: "Youtube URL" %>
         <%= form.text_field :amazon, placeholder: "Amazon URL" %>
-        <%= form.text_area :text, placeholder: "オススメ紹介文", rows: "10" %>
+        <%= form.text_area :text, placeholder: "本の紹介文", rows: "10" %>
         <%= form.submit "投稿する" %>
       <% end %>
     </div>
