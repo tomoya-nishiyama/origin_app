@@ -2,7 +2,7 @@
 # 概要
 
 「読書が好きです。」  
-ORIGINはお気に入りの本を動画付きで投稿、共有するサービスです。
+Origin Booksはお気に入りの本を動画付きで投稿、共有するサービスです。
 
 # URL
 
@@ -25,6 +25,10 @@ http://origin-app.work/
 * 紹介したい本の投稿時にタイトル、カテゴリー、紹介文を入れURLを貼る事で動画を貼ったり、amazonで購入する事ができます。  
 
 <img width="1236" alt="329cc0189cc6023191fea77de0f0d692" src="https://user-images.githubusercontent.com/73161307/110497344-b2ee1b00-8139-11eb-8574-283f4e5b32ce.png">
+
+* 詳細画面に遷移する事でいいねが押せたり、本をamazonで購入する事もできます。  
+
+![2d6f241299e80a437a43da71ab08c69e](https://user-images.githubusercontent.com/73161307/110498730-ed0bec80-813a-11eb-8713-3d3b000a018c.jpg)
 
 
 
