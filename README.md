@@ -17,13 +17,19 @@ PASS: 2222
 
 # 使用技術
 
-* Ruby  
+* Ruby 2.6.5  
 * Ruby on Rails 6.0.0  
 * MySQL 5.6.50  
 * RSpec  
 * AWS  
+  * VPC  
   * EC2  
-  * Route53
+  * RDB(MariaDB)  
+  * ELB(ALB)  
+  * Route53  
+* NGINX  
+* Capistrano
+
 
 # 機能一覧
 
@@ -35,8 +41,10 @@ PASS: 2222
 # テスト
 
 * RSpec  
-  * 新規登録機能、投稿機能の単体テストコード
- 
+  * 新規登録機能、投稿機能(単体テストコード)
+
+# インフラ構成図
+
  ![png](https://user-images.githubusercontent.com/73161307/110421743-6ecf2c00-80e1-11eb-9da1-7bf92b852ae7.png)
 
 
