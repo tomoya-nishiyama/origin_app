@@ -67,7 +67,7 @@ http://origin-app.work/
 
 # インフラ構成図
 
- ![png](https://user-images.githubusercontent.com/73161307/110421743-6ecf2c00-80e1-11eb-9da1-7bf92b852ae7.png)
+ ![AWS構成図](https://user-images.githubusercontent.com/73161307/113968996-21281980-986f-11eb-8773-1d4b20382ce0.jpeg)
 
 
 
